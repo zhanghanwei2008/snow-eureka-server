@@ -1,0 +1,14 @@
+version: "3.1"
+services:
+   springboot1:
+     image: 192.168.31.107:5000/snow-eureka-server:dev
+     ports:
+     - '20000:19090'
+   springboot2:
+     image: 192.168.31.107:5000/snow-eureka-server:dev
+     ports:
+     - '20001:19090' 
+   springboot3:
+     image: 192.168.31.107:5000/snow-eureka-server:dev
+     ports:
+     - '20002:19090'
